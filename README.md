@@ -35,7 +35,7 @@ cp .env.example .env
 
 ```env
 MODEL_PROVIDER=gemini
-MODEL_NAME=gemini-3.5-flash-lite
+MODEL_NAME=gemini-3.8-flash
 API_KEY=<key Gemini AI Studio (AIza...) hoặc Vertex AI Express (AQ...)>
 ```
 
@@ -90,7 +90,7 @@ python web_demo.py
 
 | Thành phần | Thật / Giả | Ghi chú |
 |---|---|---|
-| Lời gọi AI soạn lộ trình ôn 15 phút + câu hỏi gợi mở | **Thật** | Model: `gemini-3.5-flash-lite` (qua `codebase/ai.py`, đo token thật từ `usageMetadata`) |
+| Lời gọi AI soạn lộ trình ôn 15 phút + câu hỏi gợi mở | **Thật** | Model chạy thử/demo: `gemini-3.8-flash` (eval lượt 1–2 & simulate-1: `gemini-3.5-flash-lite`), đo token thật từ `usageMetadata` |
 | Quy tắc lọc tối đa 3 điểm ưu tiên + cổng kiểm trích dẫn + hàng rào an toàn | **Thật** | Chạy hoàn toàn trong `codebase/agent.py` |
 | Dữ liệu log học viên (`data/progress.json`) | **Chưng cất từ data thật** | 17 học viên mẫu đã ẩn danh trích xuất từ data pre-class BTC cấp (`data/DATA_CARD.md`), chưa nối trực tiếp CSDL web pre-class |
 | Tạo ca báo sai log (`flag_for_mentor`) | **Giả lập cục bộ** | Trả mã ca `FLAG-xxx` trong bộ nhớ để chờ lab coach kiểm chứng, chưa gửi thông báo ra hệ thống ngoài |
@@ -109,5 +109,5 @@ Nhóm dùng trợ lý lập trình AI để dựng khung mã nguồn (`codebase/
 | 4 | Bản chạy thử làm trọn lát cắt | `codebase/` · `web_demo.py` · lệnh ở mục "Lệnh" |
 | 5 | Định nghĩa "tốt" + bộ câu thử | `data/DATA_CARD.md` · `eval/` |
 | 6 | Mô phỏng chi phí khi dùng thật | `cost/` |
-| 7 | Slide + demo + video dự phòng | `demo-slides.pdf` (từ `slides/outline.md`) · link video CP3/CP4: *(sẽ cập nhật sau khi quay)* |
+| 7 | Slide + demo + video dự phòng | `demo-slides.pdf` (từ `slides/outline.md`) · video demo thật: [demo-preclasscoach.mp4](demo-preclasscoach.mp4) (36s, chạy live `web_demo.py` + `gemini-3.8-flash`, mở trực tiếp trên GitHub công khai) |
 | + | *Bonus:* người dùng thử | `validation/log.md` |
