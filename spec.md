@@ -10,19 +10,19 @@ Data BTC cấp đã dùng (không commit nguyên file): data/preclass — đào 
 ## §1. Người dùng & bằng chứng
 - Người dùng chính: học viên AI20K có học pre-class, tối trước buổi học muốn ôn đúng phần mình hổng trong ~15 phút.
 - Việc họ cố làm xong: biết chính xác mình chưa vững điểm kiến thức nào và ôn lại đúng điểm đó trước buổi học.
-- Hôm nay họ giải bằng gì, hỏng ở đâu: tự nhớ / học lại từ đầu / bỏ qua — hỏng vì không ai tổng hợp log: sai lần đầu xong là bỏ (chỉ 2/424 lượt sai được làm lại), mục học bỏ dở (chỉ 44% học viên có hoạt động hoàn thành >=1 mục).
-- Pain (KHÔNG chữ AI): học viên — đang học pre-class — sai lần đầu và bỏ dở mục học mà không có gì chỉ lại phần hổng — vào buổi học với lỗ hổng cũ và dần bỏ pre-class (còn hoạt động Day01 417 → Day12 26 người).
-- Bằng chứng — số chính + kết luận: đào data preclass đạt ngưỡng (evidence/data-mining.md, script chạy lại được); phỏng vấn >=3 học viên ngoài nhóm để kiểm lại + lấy trích dẫn (evidence/summary.md).
+- Qua log, 424/2.478 lượt trả lời lần đầu có chấm bị sai và chỉ 2/424 lượt sai có lần làm lại được chấm. Có 192/436 học viên có hoạt động được ghi nhận hoàn thành ít nhất một mục.
+- Pain của lát cắt là học viên có điểm sai lần đầu trong pre-class nhưng hiếm khi làm lại chính câu đó trên hệ thống, nên nhóm chọn hỗ trợ xác định phần cần ôn trước buổi học.
+- [Hồ sơ bằng chứng](evidence/summary.md) có năm ví dụ kiểm tra được từ log BTC. Nhóm dự kiến phỏng vấn ít nhất ba học viên ngoài nhóm để hiểu vì sao họ có hoặc không quay lại ôn.
 
 ## §2. Impact & quyết định chọn
 
 | Hướng | Bao nhiêu người gặp | Bao nhiêu lần / tháng | Mỗi lần tốn gì | Impact / tháng | Làm kịp không | Chọn? |
 |---|---|---|---|---|---|---|
-| A1a. Lộ trình ôn 15 phút từ log cá nhân | 436 học viên có hoạt động pre-class (data BTC) | ~8 buổi/tháng (theo nhịp Day, tự ước tính) | ôn lệch hoặc học lại từ đầu 30-60 phút, hoặc mang lỗ hổng vào buổi học | 436 x 8 x ~15 phút tiết kiệm ~ 52.000 phút (tự ước tính) | Có | Chọn |
+| A1a. Lộ trình ôn 15 phút từ log cá nhân | 436 học viên có hoạt động pre-class trong bộ dữ liệu BTC, dùng làm quy mô kịch bản | khoảng 8 buổi/tháng (tự ước tính) | khoảng 15 phút có thể tiết kiệm nếu xác định đúng phần cần ôn (tự ước tính) | 436 × 8 × 15 = 52.320 phút/tháng (tự ước tính) | Có | Chọn |
 | A1b. Tutor trả lời học thuật dưới video | 145 người từng nhắn AI (data BTC) | nhiều | học sai nếu AI trả lời sai | lớn nhưng đo "trả lời đúng học thuật" không kịp trong 10 giờ | Khó | Loại — lát cắt quá lớn |
 | A4. Nhắc việc theo lớp học AI | khó tách khỏi A1b | — | — | — | Khó | Loại |
 
-- **Impact / tháng** của hướng chọn = 436 người x 8 lần x 15 phút ≈ 52.320 phút/tháng — 436 lấy từ data BTC; số lần và số phút là *(tự ước tính)*, sẽ kiểm lại bằng phỏng vấn trước CP3.
+- **Impact ước tính theo tháng** là 436 người × 8 lần × 15 phút = 52.320 phút/tháng. Số 436 là quy mô người dùng có hoạt động trong dữ liệu BTC. Tần suất 8 lần và mức tiết kiệm 15 phút là giả định của nhóm, cần kiểm chứng với học viên.
 - Hướng ĐÃ LOẠI + vì sao: A1b/A4 (đo chất lượng học thuật không kịp, cần nội dung bài giảng mà data không cấp).
 - Số lần / tháng của từng kiểu người dùng: xem cost/personas.yaml.
 
@@ -30,7 +30,7 @@ Data BTC cấp đã dùng (không commit nguyên file): data/preclass — đào 
 - Trợ giảng AI trong chính trang pre-class: đáng học — trả lời ngay tại chỗ học; đáng né — không tổng hợp log dài hạn, học viên sai xong vẫn không biết mình hổng hệ thống ở đâu; mình khác ở chỗ: quyết định ôn gì lấy từ log thật của chính học viên bằng code, model chỉ diễn đạt.
 
 ## §4. Thiết kế
-- **Lát cắt MỘT CÂU**: Một học viên · hỏi "mình nên ôn gì trong 15 phút" · AI quyết định chọn tối đa 3 điểm ôn từ log của chính học viên (KC sai lần đầu trước, mục chưa xong sau), hoặc báo chưa đủ dữ liệu khi chưa có hoạt động · học viên nhận lộ trình ôn đúng phần mình hổng, mọi điểm tra được về log.
+- **Lát cắt MỘT CÂU**. Với học viên hỏi nên ôn gì trong 15 phút, hệ thống chọn tối đa ba điểm từ log theo quy tắc và model soạn hoạt động ôn cho từng điểm đã chọn, hoặc hệ thống báo thiếu dữ liệu khi log chưa đủ.
 - Không làm (4 điều): (1) không xem / tiết lộ log của học viên khác; (2) không làm hộ bài lab / bài nộp; (3) không tự sửa log theo lời kể — chỉ tạo ca nhờ lab coach kiểm chứng; (4) không trả điểm danh, hạn nộp, lịch phòng (ngoài phạm vi).
 - **Sơ đồ**:
 ```mermaid
@@ -100,14 +100,15 @@ flowchart TD
 - Ai có thể bị hại nếu AI sai: học viên (ôn lệch, mất thời gian; lộ dữ liệu học tập) — chặn bằng chọn điểm bằng code + cổng trích dẫn + riêng tư theo mã (§4).
 
 ## §10. Phân công & changelog
-- Phân công: Thành viên 2 — bằng chứng pain (đào data preclass) + bộ câu thử; [các thành viên còn lại điền theo TEAMS.md, chia cặp theo chặng]
-- Dùng AI vào việc gì: dùng coding assistant để dựng khung code + soạn tài liệu; người kiểm lại toàn bộ câu thử, chuẩn đạt và output trước khi commit. Chi tiết `docs/ai-usage.md`.
+- **Bình (đội trưởng)** phụ trách đào dữ liệu pre-class, tổng hợp bằng chứng và điều phối nộp checkpoint. **Đạt** phụ trách bản chạy thử, kết nối model và video demo. **Nam** phụ trách hồ sơ đánh giá và mô phỏng chi phí. **Mai** phụ trách chấm độc lập, slide và phân trang trình bày. Xem [TEAMS.md](TEAMS.md).
+- Nhóm dùng trợ lý lập trình để dựng bản chạy thử và soạn tài liệu. Ở phần bằng chứng, vai trò của trợ lý là hỗ trợ đối chiếu các phép đếm và ví dụ với log gốc. Xem [khai báo dùng AI](docs/ai-usage.md).
 
-**CP2 → CP4**
+**CP1 → CP4**
 
 | Thời điểm | Đổi gì | Vì sao |
 |---|---|---|
-| 27/11 CP1 | Đổi hướng từ A2 (trợ lý Discord) sang A1 theo data preclass BTC cấp, trước khi nộp CP1 | Bằng chứng pain lấy được ngay từ data thật; benchmark có 17/24 câu từ data thật |
+| Trước CP1 · 27/11 | Đổi hướng từ A2 (trợ lý Discord) sang A1 theo log pre-class BTC cấp | Log thật cho phép đo hành vi sai lần đầu và làm lại. Bộ câu thử có 17/24 câu từ dữ liệu thật. |
+| Chuẩn bị CP2 · 27/11 | Cập nhật Canvas, phân công và bổ sung năm ví dụ từ log BTC | Giúp nhóm kiểm lại số và mô tả đúng vai trò của code, model trong lát cắt. |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)**
 
