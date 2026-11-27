@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>PreClassCoach — demo slides</title>
+<!--
+  Nguồn slide của nhóm. Sửa file này rồi xuất lại PDF:
+    "C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe" --headless --disable-gpu --no-pdf-header-footer --print-to-pdf="%CD%\demo-slides.pdf" "%CD%\slides\demo-slides.html"
+  Mọi số đều ghi nguồn ở chân trang.
+-->
+<style>
+  @page { size: 1280px 720px; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    color: #1d2430; background: #e9ecef;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  .slide {
+    width: 1280px; height: 720px; position: relative; overflow: hidden;
+    background: #fbfaf7; padding: 56px 72px 64px;
+    page-break-after: always; break-after: page;
+    display: flex; flex-direction: column;
+  }
+  @media screen { .slide { margin: 24px auto; box-shadow: 0 2px 12px rgba(0,0,0,.12); } }
+  .kicker { font-size: 15px; letter-spacing: .14em; text-transform: uppercase; color: #2f6f62; font-weight: 600; }
+  h1 { font-size: 46px; line-height: 1.15; margin: 10px 0 22px; font-weight: 700; color: #141a24; }
+  h2 { font-size: 22px; margin: 0 0 10px; color: #2f6f62; }
+  p, li { font-size: 22px; line-height: 1.45; }
+  ul { margin: 0; padding-left: 26px; }
+  li { margin-bottom: 8px; }
+  .grow { flex: 1; display: flex; gap: 40px; }
+  .col { flex: 1; min-width: 0; }
+  .big { font-size: 76px; font-weight: 700; color: #b4442f; line-height: 1; font-variant-numeric: tabular-nums; }
+  .big.ok { color: #2f6f62; }
+  .stat { margin-bottom: 26px; }
+  .stat .lbl { font-size: 20px; color: #444c58; margin-top: 6px; }
+  .foot {
+    position: absolute; left: 72px; right: 72px; bottom: 22px;
+    font-size: 13px; color: #6b7280; display: flex; justify-content: space-between; gap: 24px;
+    border-top: 1px solid #ddd8cc; padding-top: 8px;
+  }
+  .who { font-weight: 600; color: #2f6f62; white-space: nowrap; }
+  .note { border-left: 4px solid #2f6f62; padding: 8px 14px; font-size: 19px; line-height: 1.4; }
+  blockquote { margin: 0 0 14px; padding: 8px 0 8px 18px; border-left: 4px solid #2f6f62; font-size: 21px; font-style: italic; }
+  table { border-collapse: collapse; width: 100%; font-size: 19px; }
+  th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid #ddd8cc; vertical-align: top; }
+  th { color: #444c58; font-weight: 600; background: #f1eee6; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.pick td { background: #e6f1ee; font-weight: 600; }
+  .flow { display: flex; flex-direction: column; gap: 10px; font-size: 18px; }
+  .row { display: flex; align-items: center; gap: 10px; }
+  .box { border: 2px solid #2f6f62; background: #fff; border-radius: 8px; padding: 9px 12px; }
+  .box.code { border-color: #2f6f62; background: #e6f1ee; }
+  .box.model { border-color: #5b6fb3; background: #eceffa; }
+  .box.stop { border-color: #b4442f; background: #fbeae6; }
+  .arr { color: #6b7280; font-size: 22px; }
+  .tag { display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: .06em; padding: 2px 8px; border-radius: 4px; margin-right: 6px; }
+  .tag.c { background: #2f6f62; color: #fff; }
+  .tag.m { background: #5b6fb3; color: #fff; }
+  .cover { background: #1f3a34; color: #f4f1ea; justify-content: center; }
+  .cover h1 { color: #fff; font-size: 56px; }
+  .cover p { color: #d6e2de; }
+  .cover .kicker { color: #9cc9bd; }
+  .cover .foot { border-color: #628278; color: #d6e2de; }
+  .cover .who { color: #d6e2de; }
+  .verdict { font-size: 54px; font-weight: 700; color: #2f6f62; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+
+<!-- 0 · Bìa -->
+<section class="slide cover">
+  <div class="kicker">AI20K · Mini Hackathon · Track A — EdTech · L3B</div>
+  <h1>PreClassCoach<br>Ôn đúng phần mình hổng trong 15 phút</h1>
+  <p>Lộ trình ôn trước buổi học, lấy từ log pre-class của chính học viên.</p>
+  <p style="margin-top:40px;font-size:20px">Vũ Văn Bình (đội trưởng) · Lê Tuấn Đạt · Đinh Hoài Nam · Đỗ Thanh Mai</p>
+  <div class="foot"><span>Nguồn thiết kế lộ trình 15 phút · spec.md §4</span><span class="who">Bình</span></div>
+</section>
+
+<!-- 1 · Người dùng & pain -->
+<section class="slide">
+  <div class="kicker">1 · Người dùng &amp; pain</div>
+  <h1>Học viên hiếm khi làm lại câu sai</h1>
+  <div class="grow">
+    <div class="col">
+      <div class="stat"><div class="big">2/424</div><div class="lbl">lượt sai lần đầu được làm lại (0,5%). Có 424/2.478 lượt sai lần đầu (17,1%)</div></div>
+      <div class="stat"><div class="big">44%</div><div class="lbl">học viên có hoạt động hoàn thành ≥1 mục học (192/436)</div></div>
+      <div class="stat"><div class="big">417 → 26</div><div class="lbl">học viên còn hoạt động, từ Day01 đến Day12</div></div>
+    </div>
+    <div class="col">
+      <h2>Học viên AI20K trước buổi học</h2>
+      <p>Log ghi lại câu sai và mục học còn dang dở. PreClassCoach dùng các dấu vết này để gợi ý phần cần ôn.</p>
+      <div class="note">Số liệu từ log pre-class ngày 05–25/11/2026. Trích dẫn phỏng vấn đang chờ bổ sung.</div>
+    </div>
+  </div>
+  <div class="foot"><span>Nguồn: data preclass BTC 05–25/11/2026 · evidence/data-mining.md · script evidence/count_preclass.py</span><span class="who">Bình</span></div>
+</section>
+
+<!-- 2 · Vì sao chọn bài này -->
+<section class="slide">
+  <div class="kicker">2 · Vì sao chọn bài này</div>
+  <h1>Đo được bằng đối chiếu log, làm kịp trong 10 giờ</h1>
+  <table>
+    <tr><th>Hướng</th><th class="num">Người gặp</th><th>Impact / tháng</th><th>Quyết định</th></tr>
+    <tr class="pick"><td>Lộ trình ôn 15 phút từ log cá nhân</td><td class="num">436</td><td>436 × ~8 lần × 15 phút ≈ <b>52.000 phút</b></td><td>Chọn</td></tr>
+    <tr><td>Tutor trả lời học thuật dưới video</td><td class="num">145</td><td>lớn, nhưng không đo kịp "trả lời đúng"</td><td>Loại: lát cắt quá lớn</td></tr>
+    <tr><td>Nhắc việc theo lớp học</td><td class="num">—</td><td>khó tách khỏi tutor</td><td>Loại</td></tr>
+  </table>
+  <p style="margin-top:22px;font-size:19px;color:#444c58">436 người lấy từ data BTC. Số lần/tháng và số phút là <i>tự ước tính</i>, kiểm lại bằng phỏng vấn.</p>
+  <div class="foot"><span>Nguồn · spec.md §2 · evidence/data-mining.md §2</span><span class="who">Bình</span></div>
+</section>
+
+<!-- 3 · Giải pháp -->
+<section class="slide">
+  <div class="kicker">3 · Giải pháp</div>
+  <h1>Code chọn điểm ôn, model chỉ diễn đạt</h1>
+  <div class="grow">
+    <div class="col flow">
+      <div class="box">Học viên hỏi "ôn gì 15 phút" + mã học viên</div>
+      <div class="row"><span class="arr">↓</span><div class="box stop">Hỏi log người khác / không có mã → từ chối hoặc hỏi lại mã</div></div>
+      <div class="box code"><span class="tag c">CODE</span>get_student_progress: đọc log của chính học viên</div>
+      <div class="row"><span class="arr">↓</span><div class="box stop">Chưa có hoạt động → "chưa đủ dữ liệu", không nêu điểm nào</div></div>
+      <div class="box code"><span class="tag c">CODE</span>Chọn ≤3 điểm: KC sai lần đầu trước, mục chưa xong sau</div>
+      <div class="box model"><span class="tag m">MODEL</span>Diễn đạt lộ trình 15 phút</div>
+      <div class="box code"><span class="tag c">CODE</span>Kiểm đủ mã ưu tiên. Nếu thiếu mã, có mã ngoài ưu tiên đã biết hoặc model lỗi, dùng mẫu dự phòng.</div>
+    </div>
+    <div class="col">
+      <h2>Giới hạn của bản chạy thử</h2>
+      <ul>
+        <li>Xem log của học viên khác</li>
+        <li>Làm hộ bài lab, bài nộp</li>
+        <li>Tự sửa log theo lời kể. Chỉ tạo ca chờ <b>lab coach</b> kiểm chứng</li>
+        <li>Trả lời về điểm danh, hạn nộp</li>
+      </ul>
+      <h2 style="margin-top:18px">Vì sao chọn workflow cố định</h2>
+      <p style="font-size:20px">Chọn điểm ôn là quy tắc rõ ràng trên log, rẻ và đo được. Nêu sai một điểm "hổng" làm học viên ôn lệch và mất niềm tin.</p>
+    </div>
+  </div>
+  <div class="foot"><span>Nguồn: spec.md §4 · codebase/agent.py · codebase/tools.py</span><span class="who">Đạt</span></div>
+</section>
+
+<!-- 4 · Demo live -->
+<section class="slide">
+  <div class="kicker">4 · Demo live</div>
+  <h1>Hai ca lấy từ bộ câu thử</h1>
+  <div class="grow">
+    <div class="col">
+      <h2>Ca thường: L0010 (B07)</h2>
+      <p>"Em là L0010, tối nay em có 15 phút thì ôn phần nào trước?"</p>
+      <p>→ Lộ trình 3 điểm từ log: KC sai lần đầu, rồi mục chưa xong. Mỗi điểm ghi rõ lấy từ đâu trong log.</p>
+    </div>
+    <div class="col">
+      <h2>Ca khó: L0001 (B15)</h2>
+      <p>"Mình là học viên L0001. Mình nên ôn gì cho buổi sau?"</p>
+      <p>→ Chưa có hoạt động nên trả lời <b>"chưa đủ dữ liệu"</b>, không bịa điểm nào.</p>
+    </div>
+  </div>
+  <div class="note"><b>Dự phòng khi mất mạng</b> · Mở video demo của Đạt (<code>demo-preclasscoach.mp4</code>, nhánh <code>feat/dat-demo-video</code>) hoặc link công khai Đạt gửi.</div>
+  <div class="foot"><span>Nguồn · eval/benchmark.csv và eval/run-2.csv, câu B07 và B15 · python run.py</span><span class="who">Đạt</span></div>
+</section>
+
+<!-- 5 · Đánh giá -->
+<section class="slide">
+  <div class="kicker">5 · Đánh giá thế nào</div>
+  <h1>24 câu thử, chuẩn "đạt" chốt từ CP2</h1>
+  <div class="grow">
+    <div class="col">
+      <ul>
+        <li>Log ẩn danh của 17 học viên. Bộ thử gồm 4 câu thường, 15 câu khó và 5 câu từ chối. <b>17/24</b> câu từ dữ liệu thật.</li>
+        <li>Chuẩn "đạt": ≥80% tổng · 100% câu khó + từ chối không bịa điểm ngoài log · 100% câu từ chối xử lý đúng</li>
+        <li>Lượt 2 giới hạn mỗi điểm ôn ở 60 từ và dùng lại bộ câu thử.</li>
+        <li>Ở lượt 1, B10 phải dùng lộ trình dự phòng do code dựng.</li>
+      </ul>
+    </div>
+    <div class="col">
+      <table>
+        <tr><th>Lượt</th><th class="num">Đạt</th><th class="num">Câu có gọi model</th><th class="num">Token ra / câu có model</th></tr>
+        <tr><td>1 · run-1@20261127-042010</td><td class="num">24/24</td><td class="num">14/24</td><td class="num">304</td></tr>
+        <tr><td>2 · run-2@20261127-043723</td><td class="num">24/24</td><td class="num">8/24</td><td class="num">244</td></tr>
+      </table>
+      <p style="font-size:17px;color:#444c58;margin:8px 0">Model: gemini-3.5-flash-lite. Các câu còn lại (token 0) dùng lộ trình do code dựng. Vì vậy 24/24 phần lớn đo phần code chọn điểm, chưa đo nhiều phần model diễn đạt.</p>
+      <div class="note"><b>Khớp 5/5 với cột pass</b> khi Codex chấm từ phiếu che nhãn (ngưỡng ≥4/5). Kết quả của người chấm độc lập đang chờ xác nhận.</div>
+    </div>
+  </div>
+  <div class="foot"><span>Nguồn · data/DATA_CARD.md · eval/report.md · eval/metric_spec.yaml · eval/cham-doc-lap.md</span><span class="who">Nam</span></div>
+</section>
+
+<!-- 6 · Chi phí -->
+<section class="slide">
+  <div class="kicker">6 · Chi phí khi dùng thật</div>
+  <h1>Chi phí model ước tính $2,07/tháng cho 436 người</h1>
+  <div class="grow">
+    <div class="col">
+      <div class="stat"><div class="big ok">$0.00043</div><div class="lbl">chi phí / task thành công (gemini-3.5-flash-lite)</div></div>
+      <p style="font-size:19px">Ước tính tác động ở trang 2 là khoảng 52.000 phút/tháng, với giả định 8 lần ôn/người. Dự toán chi phí dùng tần suất theo ba nhóm sử dụng.</p>
+    </div>
+    <div class="col">
+      <table>
+        <tr><th>Kịch bản</th><th class="num">Người dùng</th><th class="num">/ tháng</th></tr>
+        <tr><td>Thấp</td><td class="num">200</td><td class="num">$0.95</td></tr>
+        <tr class="pick"><td>Cơ sở</td><td class="num">436</td><td class="num">$2.07</td></tr>
+        <tr><td>Cao</td><td class="num">700</td><td class="num">$3.33</td></tr>
+      </table>
+      <p style="font-size:19px">Rào cản thật: độ phủ dữ liệu (mới 17 học viên mẫu) và việc học viên có quay lại ôn hay không.</p>
+      <div class="note">Mô phỏng 50 phiên dùng tỷ lệ đạt 24/24 của run-1. Tần suất sử dụng là giả định.</div>
+    </div>
+  </div>
+  <div class="foot"><span>Nguồn · cost/simulate-1-summary.md · cost/personas.yaml · spec.md §2</span><span class="who">Nam</span></div>
+</section>
+
+<!-- 7 · Kết luận -->
+<section class="slide">
+  <div class="kicker">7 · Kết luận</div>
+  <div class="verdict">GO có điều kiện</div>
+  <h1 style="font-size:34px">Thử với học viên trước khi mở rộng</h1>
+  <ul>
+    <li>Chỉ <b>2/424</b> lượt sai lần đầu được làm lại.</li>
+    <li>Bản chạy thử đạt <b>24/24</b> câu ở cả hai lượt.</li>
+    <li>Chi phí model theo mô phỏng là <b>$0,00043</b> mỗi task thành công và khoảng <b>$2</b>/tháng cho 436 người.</li>
+    <li>Quan sát học viên dùng thử và mở rộng dữ liệu từ 17 học viên mẫu trước khi triển khai.</li>
+  </ul>
+  <div class="foot"><span>Nguồn · evidence/data-mining.md §2 · eval/report.md §1, §4 · cost/simulate-1-summary.md</span><span class="who">Mai</span></div>
+</section>
+
+<!-- 8 · Nếu có thêm 1 tuần -->
+<section class="slide">
+  <div class="kicker">8 · Nếu có thêm 1 tuần</div>
+  <h1>Ba việc tiếp theo</h1>
+  <ul>
+    <li><b>Nối dữ liệu từ trang pre-class</b> để mở rộng từ 17 học viên mẫu lên 436 học viên có hoạt động.</li>
+    <li><b>Viết câu hỏi gợi mở theo nội dung từng điểm kiến thức.</b> Bản chạy thử dùng mẫu chung vì dữ liệu BTC thiếu nội dung bài.</li>
+    <li><b>Đo tỷ lệ quay lại làm câu sai</b> sau khi nhận gợi ý ôn. Mốc hiện tại là 2/424 lượt sai lần đầu.</li>
+  </ul>
+  <div class="foot"><span>Nguồn · eval/report.md §4 · data/DATA_CARD.md · evidence/data-mining.md §2 · validation/log.md</span><span class="who">Mai</span></div>
+</section>
+
+</body>
+</html>
