@@ -109,5 +109,5 @@ Nhóm dùng trợ lý lập trình AI để dựng khung mã nguồn (`codebase/
 | 4 | Bản chạy thử làm trọn lát cắt | `codebase/` · `web_demo.py` · lệnh ở mục "Lệnh" |
 | 5 | Định nghĩa "tốt" + bộ câu thử | `data/DATA_CARD.md` · `eval/` |
 | 6 | Mô phỏng chi phí khi dùng thật | `cost/` |
-| 7 | Slide + demo + video dự phòng | `demo-slides.pdf` (từ `slides/outline.md`) · video demo thật: [demo-preclasscoach.mp4](demo-preclasscoach.mp4) (36s, chạy live `web_demo.py` + `gemini-3.8-flash`, mở trực tiếp trên GitHub công khai) |
+| 7 | Slide + demo + video dự phòng | `demo-slides.pdf` (từ `slides/outline.md`) · link video CP3/dự phòng (Google Drive công khai): https://drive.google.com/file/d/1_TUCj0DW2yme8MjW6ZYxK7heKXsV_qw7/view?usp=sharing · bản trong repo: [demo-preclasscoach.mp4](demo-preclasscoach.mp4) (36s, chạy live `web_demo.py` + `gemini-3.8-flash`) |
 | + | *Bonus:* người dùng thử | `validation/log.md` |
