@@ -1,0 +1,2 @@
+Mình nghĩ học viên học pre-class mà không biết mình hổng ở đâu: trả lời sai lần đầu thì gần như không quay lại sửa, nhiều mục học bỏ dở, và số người còn học pre-class giảm mạnh theo ngày — vì không có gì chỉ lại đúng phần hổng cho từng người.
+Mình đúng nếu thấy trong data preclass BTC cấp: tỉ lệ lượt sai lần đầu được làm lại rất thấp; chưa tới một nửa số học viên có hoạt động hoàn thành ít nhất một mục học; và số học viên còn hoạt động ở các ngày cuối chỉ còn một phần nhỏ so với ngày đầu. Kiểm lại bằng phỏng vấn >=3 học viên ngoài nhóm về lần gần nhất họ ôn trước buổi học.

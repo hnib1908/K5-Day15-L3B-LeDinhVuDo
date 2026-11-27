@@ -1,0 +1,3092 @@
+{
+ "L0526": {
+  "ma_hoc_vien": "L0526",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06",
+   "program-day07",
+   "program-day10",
+   "program-day11",
+   "program-day12",
+   "program-day13"
+  ],
+  "so_muc_da_xong": 78,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "adoption_vs_outcome_metrics",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "bounded_retry_cost",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "cost_lever_sensitivity",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "cost_per_successful_task",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "event_schema_before_metrics",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "harness_around_model",
+    "ngay": "program-day12"
+   },
+   {
+    "ma": "hook_exit_code_fail_closed",
+    "ngay": "program-day12"
+   },
+   {
+    "ma": "instructions_vs_enforcement",
+    "ngay": "program-day12"
+   },
+   {
+    "ma": "reading_productivity_claims",
+    "ngay": "program-day12"
+   },
+   {
+    "ma": "asr_utility_approval_metrics",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "deterministic_decision_procedure",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "falsifiable_control_evidence",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "idempotent_resume_after_approval",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "obligation_control_evidence",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "criteria_signed_before_measuring",
+    "ngay": "program-day10"
+   },
+   {
+    "ma": "gap_to_gate_condition",
+    "ngay": "program-day10"
+   },
+   {
+    "ma": "gate_components",
+    "ngay": "program-day10"
+   },
+   {
+    "ma": "pilot_ops_readiness",
+    "ngay": "program-day10"
+   },
+   {
+    "ma": "chunk_size_tradeoff",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "context_window_contents",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "recall_at_k_measurement",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "skill_progressive_disclosure",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "tool_definition_context_cost",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "fact_ledger_recall_by_doc_type",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "gate_severity_and_strictness",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "label_agreement_beyond_raw_percent",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "lineage_trace_to_source",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "more_data_amplifies_stale_copies",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "quasi_identifier_reidentification",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "raw_clean_serve_layers",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "silent_extraction_failures",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "storage_by_query_shape",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "ai_product_canvas",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "trust_calibration_levers",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "system_prompt_antipatterns",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "agent_architecture_components",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "agentic_fit_scoring_decision",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "trace_based_agent_evaluation",
+    "ngay": "program-day03"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day13:launch-economics:kiem-tra-cuoi-ngay",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:kiem-tra-cuoi-ngay",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-ban-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thu-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "adoption_vs_outcome_metrics",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "bounded_retry_cost",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "cost_lever_sensitivity",
+    "ngay": "program-day13"
+   }
+  ]
+ },
+ "L0597": {
+  "ma_hoc_vien": "L0597",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06",
+   "program-day07",
+   "program-day08",
+   "program-day09",
+   "program-day10",
+   "program-day11",
+   "program-day12",
+   "program-day13"
+  ],
+  "so_muc_da_xong": 86,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "cluster_design_effect",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "cost_per_successful_task",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "economic_risk_register_rows",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "event_schema_before_metrics",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "launch_decision_go_conditions",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "instructions_vs_enforcement",
+    "ngay": "program-day12"
+   },
+   {
+    "ma": "reading_productivity_claims",
+    "ngay": "program-day12"
+   },
+   {
+    "ma": "falsifiable_control_evidence",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "behavioral_assertion_over_string",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "llm_judge_calibration",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "paired_bootstrap_interpretation",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "pass_at_k_vs_pass_hat_k",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "agent_shape_selection",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "crash_safe_side_effects",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "workflow_pattern_selection",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "chunk_context_before_indexing",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "context_budget_allocation",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "context_packaging_zones",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "context_window_contents",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "skill_progressive_disclosure",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "tool_definition_context_cost",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "batch_rules_beyond_schema",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "label_agreement_beyond_raw_percent",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "lineage_trace_to_source",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "more_data_amplifies_stale_copies",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "quasi_identifier_reidentification",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "raw_clean_serve_layers",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "cot_task_fit",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "reliable_tool_design_principles",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "system_prompt_antipatterns",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "tool_granularity",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "agentic_fit_scoring_decision",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "trace_based_agent_evaluation",
+    "ngay": "program-day03"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day13:launch-economics:lab-d13-lab-hoa-don-ticket",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:lab-d13-lab-pilot-trung-thuc",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:lab-d12-lab-ai-cham-bai",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:lab-d12-lab-loi-dan-o-khoa",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:lab-d11-lab-ham-quyet-dinh",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-buoc-danh-gia",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-van-hanh-pilot",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-cong-ci",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-soi-giam-khao",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-bon-shape",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-crash-test",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:lab-d07-lab-ngan-sach-context",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-ban-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thu-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:kiem-tra-cuoi-ngay",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-1",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-2",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-3",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-4",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-5",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-6",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "cluster_design_effect",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "cost_per_successful_task",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "economic_risk_register_rows",
+    "ngay": "program-day13"
+   }
+  ]
+ },
+ "L0616": {
+  "ma_hoc_vien": "L0616",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06",
+   "program-day07",
+   "program-day08",
+   "program-day09",
+   "program-day10",
+   "program-day11",
+   "program-day12"
+  ],
+  "so_muc_da_xong": 78,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "approval_screen_from_exact_action",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "asr_utility_approval_metrics",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "capability_tags_data_flow",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "obligation_control_evidence",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "final_state_grading",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "paired_bootstrap_interpretation",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "multi_agent_fit_signals",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "multi_agent_task_type_evidence",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "memory_supersession_policy",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "recall_at_k_measurement",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "batch_rules_beyond_schema",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "document_identity_and_effective_date",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "gate_severity_and_strictness",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "hybrid_search_needs_validity_filter",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "label_agreement_beyond_raw_percent",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "lineage_trace_to_source",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "more_data_amplifies_stale_copies",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "quasi_identifier_reidentification",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "raw_clean_serve_layers",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "cot_task_fit",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "ai_boom_data_architecture_hardware",
+    "ngay": "program-day01"
+   },
+   {
+    "ma": "chatbot_is_app_around_model",
+    "ngay": "program-day01"
+   },
+   {
+    "ma": "model_tier_selection",
+    "ngay": "program-day01"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:lab-d12-lab-ai-cham-bai",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:lab-d12-lab-loi-dan-o-khoa",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-1",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-2",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-3",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-4",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-5",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-6",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-thang-tu-chu",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-1",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-2",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-3",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-4",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-5",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-6",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-soi-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-ban-la-agent",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-can-agentic-fit",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-2",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-3",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-4",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-5",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-6",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:kiem-tra-cuoi-ngay",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-6",
+    "bai": "program-day02:ai-problem-definition"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "approval_screen_from_exact_action",
+    "ngay": "program-day11"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "asr_utility_approval_metrics",
+    "ngay": "program-day11"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "capability_tags_data_flow",
+    "ngay": "program-day11"
+   }
+  ]
+ },
+ "L0326": {
+  "ma_hoc_vien": "L0326",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06",
+   "program-day07",
+   "program-day08"
+  ],
+  "so_muc_da_xong": 71,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "gate_before_side_effect",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "implicit_decisions_shared_context",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "workflow_vs_agent_control",
+    "ngay": "program-day08"
+   },
+   {
+    "ma": "memory_supersession_policy",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "recall_at_k_measurement",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "skill_progressive_disclosure",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "batch_rules_beyond_schema",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "label_agreement_beyond_raw_percent",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "raw_clean_serve_layers",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "storage_by_query_shape",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "ai_product_canvas",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "ai_uncertainty_layers",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "error_distribution_over_aggregate",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "feedback_signal_types",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "human_reviewer_role_design",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "trust_calibration_levers",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "system_prompt_contract",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "zero_one_few_shot_selection",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "react_reasoning_acting_pattern",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "well_defined_tool_specification",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "complete_ai_problem_statement",
+    "ngay": "program-day02"
+   },
+   {
+    "ma": "construct_eval_plan",
+    "ngay": "program-day02"
+   },
+   {
+    "ma": "attention_context_representation",
+    "ngay": "program-day01"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-soi-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "gate_before_side_effect",
+    "ngay": "program-day08"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "implicit_decisions_shared_context",
+    "ngay": "program-day08"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "workflow_vs_agent_control",
+    "ngay": "program-day08"
+   }
+  ]
+ },
+ "L0247": {
+  "ma_hoc_vien": "L0247",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06",
+   "program-day07",
+   "program-day08",
+   "program-day09",
+   "program-day10",
+   "program-day11",
+   "program-day12",
+   "program-day13"
+  ],
+  "so_muc_da_xong": 100,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "adoption_vs_outcome_metrics",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "bounded_retry_cost",
+    "ngay": "program-day13"
+   },
+   {
+    "ma": "capability_tags_data_flow",
+    "ngay": "program-day11"
+   },
+   {
+    "ma": "gate_decision_evidence",
+    "ngay": "program-day10"
+   },
+   {
+    "ma": "ci_eval_gate",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "paired_bootstrap_interpretation",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "pass_at_k_vs_pass_hat_k",
+    "ngay": "program-day09"
+   },
+   {
+    "ma": "tool_definition_context_cost",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "more_data_amplifies_stale_copies",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "quasi_identifier_reidentification",
+    "ngay": "program-day06"
+   },
+   {
+    "ma": "ai_four_path_behavior",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "ai_product_canvas",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "error_distribution_over_aggregate",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "system_prompt_contract",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "tool_granularity",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "agentic_fit_criteria",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "agentic_fit_scoring_decision",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "ai_system_spectrum_classification",
+    "ngay": "program-day03"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day13:launch-economics:kiem-tra-cuoi-ngay",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:lab-d13-lab-pilot-trung-thuc",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-1",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-6",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-tram-gate",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-soi-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-ban-la-agent",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:kiem-tra-cuoi-ngay",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "adoption_vs_outcome_metrics",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "bounded_retry_cost",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "capability_tags_data_flow",
+    "ngay": "program-day11"
+   }
+  ]
+ },
+ "L0658": {
+  "ma_hoc_vien": "L0658",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06"
+  ],
+  "so_muc_da_xong": 44,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "ai_product_canvas",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "ai_requirement_outcome_threshold_fallback",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "ai_uncertainty_layers",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "feedback_signal_types",
+    "ngay": "program-day05"
+   },
+   {
+    "ma": "cot_task_fit",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "prompt_evaluation_versioning",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "structured_prompting",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "system_prompt_contract",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "tool_calling_flow",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "agent_boundary_condition",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "agentic_fit_scoring_decision",
+    "ngay": "program-day03"
+   },
+   {
+    "ma": "complete_ai_problem_statement",
+    "ngay": "program-day02"
+   },
+   {
+    "ma": "construct_eval_plan",
+    "ngay": "program-day02"
+   },
+   {
+    "ma": "output_input_metric_design",
+    "ngay": "program-day02"
+   },
+   {
+    "ma": "select_rule_workflow_agent_level",
+    "ngay": "program-day02"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day06:data-engineering-for-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-ba-ban-chinh-sach",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-tram-gate",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-1",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-2",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-3",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-4",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-5",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-6",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-soi-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "ai_product_canvas",
+    "ngay": "program-day05"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "ai_requirement_outcome_threshold_fallback",
+    "ngay": "program-day05"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "ai_uncertainty_layers",
+    "ngay": "program-day05"
+   }
+  ]
+ },
+ "L0010": {
+  "ma_hoc_vien": "L0010",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day09"
+  ],
+  "so_muc_da_xong": 32,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "select_rule_workflow_agent_level",
+    "ngay": "program-day02"
+   },
+   {
+    "ma": "chatbot_is_app_around_model",
+    "ngay": "program-day01"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day09:evaluation-failure-analysis:kiem-tra-cuoi-ngay",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-cong-ci",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-soi-giam-khao",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-3",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-thang-tu-chu",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-2",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-3",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-4",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-5",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-6",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:kiem-tra-cuoi-ngay",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-ban-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-soi-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thu-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-ban-la-agent",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-can-agentic-fit",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:kiem-tra-cuoi-ngay",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "select_rule_workflow_agent_level",
+    "ngay": "program-day02"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "chatbot_is_app_around_model",
+    "ngay": "program-day01"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day09:evaluation-failure-analysis:kiem-tra-cuoi-ngay",
+    "ngay": "program-day09"
+   }
+  ]
+ },
+ "L0030": {
+  "ma_hoc_vien": "L0030",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day05",
+   "program-day06",
+   "program-day07",
+   "program-day08",
+   "program-day10"
+  ],
+  "so_muc_da_xong": 10,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "chunk_size_tradeoff",
+    "ngay": "program-day07"
+   },
+   {
+    "ma": "skill_progressive_disclosure",
+    "ngay": "program-day07"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day10:poc-to-pilot:kiem-tra-cuoi-ngay",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-buoc-danh-gia",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-van-hanh-pilot",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-1",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-2",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-3",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-4",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-5",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-6",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-bon-shape",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-crash-test",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-1",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-2",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-3",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-4",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-5",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-6",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-ba-ban-chinh-sach",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-tram-gate",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-2",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-3",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-4",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-5",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-6",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-thang-tu-chu",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-1",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-2",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-3",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-4",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-5",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-6",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "chunk_size_tradeoff",
+    "ngay": "program-day07"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "skill_progressive_disclosure",
+    "ngay": "program-day07"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day10:poc-to-pilot:kiem-tra-cuoi-ngay",
+    "ngay": "program-day10"
+   }
+  ]
+ },
+ "L0360": {
+  "ma_hoc_vien": "L0360",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day02"
+  ],
+  "so_muc_da_xong": 1,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "complete_ai_problem_statement",
+    "ngay": "program-day02"
+   },
+   {
+    "ma": "select_rule_workflow_agent_level",
+    "ngay": "program-day02"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-1",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-2",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-3",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-4",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-5",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-6",
+    "bai": "program-day02:ai-problem-definition"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "complete_ai_problem_statement",
+    "ngay": "program-day02"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "select_rule_workflow_agent_level",
+    "ngay": "program-day02"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "ngay": "program-day02"
+   }
+  ]
+ },
+ "L0418": {
+  "ma_hoc_vien": "L0418",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06",
+   "program-day08",
+   "program-day10",
+   "program-day11"
+  ],
+  "so_muc_da_xong": 19,
+  "kc_sai_lan_dau": [
+   {
+    "ma": "reliable_tool_design_principles",
+    "ngay": "program-day04"
+   },
+   {
+    "ma": "system_prompt_antipatterns",
+    "ngay": "program-day04"
+   }
+  ],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:kiem-tra-cuoi-ngay",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:lab-d11-lab-bo-ba-nguy-hiem",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:lab-d11-lab-ham-quyet-dinh",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-1",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-2",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-3",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-4",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-5",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-6",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:kiem-tra-cuoi-ngay",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-buoc-danh-gia",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-van-hanh-pilot",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-1",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-2",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-3",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-4",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-5",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-6",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-bon-shape",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-crash-test",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-1",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-2",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-3",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-4",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-5",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-6",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-tram-gate",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-4",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-5",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-6",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-6",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-ban-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thu-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-ban-la-agent",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-can-agentic-fit",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-1",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-2",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-3",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-4",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-5",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-6",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:kiem-tra-cuoi-ngay",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-1",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-2",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-3",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-4",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-5",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-6",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "reliable_tool_design_principles",
+    "ngay": "program-day04"
+   },
+   {
+    "loai": "kc_sai_lan_dau",
+    "ma": "system_prompt_antipatterns",
+    "ngay": "program-day04"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day11:guardrails-hitl-responsible-ai:kiem-tra-cuoi-ngay",
+    "ngay": "program-day11"
+   }
+  ]
+ },
+ "L0008": {
+  "ma_hoc_vien": "L0008",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day03",
+   "program-day05",
+   "program-day07",
+   "program-day08",
+   "program-day09",
+   "program-day10",
+   "program-day11",
+   "program-day12",
+   "program-day13"
+  ],
+  "so_muc_da_xong": 1,
+  "kc_sai_lan_dau": [],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day13:launch-economics:kiem-tra-cuoi-ngay",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:lab-d13-lab-hoa-don-ticket",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:lab-d13-lab-pilot-trung-thuc",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-1",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-2",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-3",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-4",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-5",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day13:launch-economics:module-6",
+    "bai": "program-day13:launch-economics"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:lab-d12-lab-ai-cham-bai",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:lab-d12-lab-loi-dan-o-khoa",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-1",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-2",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-3",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-4",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-5",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day12:ai-sdlc-coding-agent:module-6",
+    "bai": "program-day12:ai-sdlc-coding-agent"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:kiem-tra-cuoi-ngay",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:lab-d11-lab-bo-ba-nguy-hiem",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:lab-d11-lab-ham-quyet-dinh",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-1",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-2",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-3",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-4",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-5",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-6",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:kiem-tra-cuoi-ngay",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-buoc-danh-gia",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-van-hanh-pilot",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-1",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-2",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-3",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-4",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-5",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-6",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:kiem-tra-cuoi-ngay",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-cong-ci",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-soi-giam-khao",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-1",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-2",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-3",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-4",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-5",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-6",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-bon-shape",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-crash-test",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-1",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-2",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-3",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-4",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-5",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-6",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:kiem-tra-cuoi-ngay",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:lab-d07-lab-hai-doan-giong-nhau",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:lab-d07-lab-ngan-sach-context",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:module-1",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:module-2",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:module-3",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:module-4",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:module-5",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day07:retrieval-context-engineering:module-6",
+    "bai": "program-day07:retrieval-context-engineering"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-thang-tu-chu",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-1",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-2",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-3",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-4",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-5",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-6",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-ban-la-agent",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-can-agentic-fit",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-1",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-2",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-3",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-4",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-5",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day13:launch-economics:kiem-tra-cuoi-ngay",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day13:launch-economics:lab-d13-lab-hoa-don-ticket",
+    "ngay": "program-day13"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day13:launch-economics:lab-d13-lab-pilot-trung-thuc",
+    "ngay": "program-day13"
+   }
+  ]
+ },
+ "L0009": {
+  "ma_hoc_vien": "L0009",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day09",
+   "program-day10",
+   "program-day11"
+  ],
+  "so_muc_da_xong": 3,
+  "kc_sai_lan_dau": [],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:kiem-tra-cuoi-ngay",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:lab-d11-lab-ham-quyet-dinh",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-2",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-3",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-5",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-6",
+    "bai": "program-day11:guardrails-hitl-responsible-ai"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:kiem-tra-cuoi-ngay",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-buoc-danh-gia",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-van-hanh-pilot",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-1",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-2",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-3",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-4",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-5",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-6",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:kiem-tra-cuoi-ngay",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-cong-ci",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-soi-giam-khao",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-1",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-2",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-3",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-4",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-5",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-6",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:kiem-tra-cuoi-ngay",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-1",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-2",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-3",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-4",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-5",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-6",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day11:guardrails-hitl-responsible-ai:kiem-tra-cuoi-ngay",
+    "ngay": "program-day11"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day11:guardrails-hitl-responsible-ai:lab-d11-lab-ham-quyet-dinh",
+    "ngay": "program-day11"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day11:guardrails-hitl-responsible-ai:module-2",
+    "ngay": "program-day11"
+   }
+  ]
+ },
+ "L0013": {
+  "ma_hoc_vien": "L0013",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day03",
+   "program-day05"
+  ],
+  "so_muc_da_xong": 1,
+  "kc_sai_lan_dau": [],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-thang-tu-chu",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-2",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-3",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-4",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-5",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-6",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-ban-la-agent",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-can-agentic-fit",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-1",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-2",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-3",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-4",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-5",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:module-6",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "ngay": "program-day05"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "ngay": "program-day05"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-thang-tu-chu",
+    "ngay": "program-day05"
+   }
+  ]
+ },
+ "L0020": {
+  "ma_hoc_vien": "L0020",
+  "co_hoat_dong": true,
+  "ngay_hoat_dong": [
+   "program-day01",
+   "program-day02",
+   "program-day03",
+   "program-day04",
+   "program-day05",
+   "program-day06",
+   "program-day08",
+   "program-day09",
+   "program-day10"
+  ],
+  "so_muc_da_xong": 17,
+  "kc_sai_lan_dau": [],
+  "muc_chua_xong": [
+   {
+    "ma": "program-day10:poc-to-pilot:kiem-tra-cuoi-ngay",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-buoc-danh-gia",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-van-hanh-pilot",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-2",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-3",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-4",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-5",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day10:poc-to-pilot:module-6",
+    "bai": "program-day10:poc-to-pilot"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:kiem-tra-cuoi-ngay",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-cong-ci",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:lab-d09-lab-soi-giam-khao",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-2",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-3",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-4",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-5",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day09:evaluation-failure-analysis:module-6",
+    "bai": "program-day09:evaluation-failure-analysis"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:lab-d08-lab-crash-test",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-3",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-5",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day08:from-workflows-to-agents:module-6",
+    "bai": "program-day08:from-workflows-to-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:kiem-tra-cuoi-ngay",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-ba-ban-chinh-sach",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:lab-d06-lab-tram-gate",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-1",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-2",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-3",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-4",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-5",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day06:data-engineering-for-agents:module-6",
+    "bai": "program-day06:data-engineering-for-agents"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:kiem-tra-cuoi-ngay",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:lab-d05-lab-eval-spec",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-3",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-4",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-5",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day05:ai-product-thinking-and-requirement:module-6",
+    "bai": "program-day05:ai-product-thinking-and-requirement"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:kiem-tra-cuoi-ngay",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-ban-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-soi-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thiet-ke-tool",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:lab-d04-lab-thu-system-prompt",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:module-3",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:module-4",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:module-5",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day04:prompt-engineering-tool-calling:module-6",
+    "bai": "program-day04:prompt-engineering-tool-calling"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:kiem-tra-cuoi-ngay",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-ban-la-agent",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day03:chatbot-to-agentic-agent:lab-d03-lab-can-agentic-fit",
+    "bai": "program-day03:chatbot-to-agentic-agent"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:kiem-tra-cuoi-ngay",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-ban-dieu-phoi",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-cham-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-chon-muc-giai-phap",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:lab-d02-lab-hoi-dong-gate",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-1",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-2",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-3",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-4",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-5",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day02:ai-problem-definition:module-6",
+    "bai": "program-day02:ai-problem-definition"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:kiem-tra-cuoi-ngay",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-ban-la-llm",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:lab-d01-lab-xep-ban-context",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-1",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-2",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-3",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-4",
+    "bai": "program-day01:ai-llm-foundation"
+   },
+   {
+    "ma": "program-day01:ai-llm-foundation:module-5",
+    "bai": "program-day01:ai-llm-foundation"
+   }
+  ],
+  "uu_tien_on": [
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day10:poc-to-pilot:kiem-tra-cuoi-ngay",
+    "ngay": "program-day10"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-buoc-danh-gia",
+    "ngay": "program-day10"
+   },
+   {
+    "loai": "muc_chua_xong",
+    "ma": "program-day10:poc-to-pilot:lab-d10-lab-van-hanh-pilot",
+    "ngay": "program-day10"
+   }
+  ]
+ },
+ "L0001": {
+  "ma_hoc_vien": "L0001",
+  "co_hoat_dong": false,
+  "ngay_hoat_dong": [],
+  "so_muc_da_xong": 0,
+  "kc_sai_lan_dau": [],
+  "muc_chua_xong": [],
+  "uu_tien_on": []
+ },
+ "L0003": {
+  "ma_hoc_vien": "L0003",
+  "co_hoat_dong": false,
+  "ngay_hoat_dong": [],
+  "so_muc_da_xong": 0,
+  "kc_sai_lan_dau": [],
+  "muc_chua_xong": [],
+  "uu_tien_on": []
+ },
+ "L0012": {
+  "ma_hoc_vien": "L0012",
+  "co_hoat_dong": false,
+  "ngay_hoat_dong": [],
+  "so_muc_da_xong": 0,
+  "kc_sai_lan_dau": [],
+  "muc_chua_xong": [],
+  "uu_tien_on": []
+ }
+}

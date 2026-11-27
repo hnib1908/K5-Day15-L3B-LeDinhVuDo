@@ -1,0 +1,41 @@
+# Mô phỏng chi phí khi dùng thật — PreClassCoach.
+# Số người dùng lấy từ data/preclass BTC (436 học viên có hoạt động); số lần dùng là (tự ước tính) theo nhịp buổi học.
+sessions: 50
+seed: 42
+
+users:
+  low: 200
+  base: 436
+  high: 700
+  source: "data/preclass BTC: 436 hoc vien co hoat dong / 721 tai khoan; high 700 (tu uoc tinh) neu mo cho ca khoa"
+
+personas:
+  - name: on_truoc_buoi
+    share: 0.5
+    uses_per_month: 8
+    turns_per_session: 1
+    source: "nhip 13 ngay hoc trong ~3 tuan (data BTC); so lan dung (tu uoc tinh)"
+  - name: on_ky_hon
+    share: 0.3
+    uses_per_month: 12
+    turns_per_session: 2
+    source: "(tu uoc tinh) - kiem lai bang phong van truoc CP3"
+  - name: hoi_them
+    share: 0.2
+    uses_per_month: 16
+    turns_per_session: 3
+    source: "(tu uoc tinh) - kiem lai bang phong van truoc CP3"
+
+prices:
+  - model: gemini-3.5-flash-lite
+    input: 0.25
+    output: 1.50
+    source: "https://ai.google.dev/gemini-api/docs/pricing - xem 27/11/2026 (kiem lai khi nop CP4)"
+  - model: gemini-3.1-flash-lite
+    input: 0.25
+    output: 1.50
+    source: "https://ai.google.dev/gemini-api/docs/pricing - xem 27/11/2026 (kiem lai khi nop CP4)"
+
+usd_to_vnd:
+  rate:
+  source:
