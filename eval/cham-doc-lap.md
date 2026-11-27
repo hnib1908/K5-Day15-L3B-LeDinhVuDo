@@ -1,10 +1,10 @@
-# Phiếu đối chiếu 5 output cho Đỗ Thanh Mai
+# Phiếu đối chiếu 5 output
 
 - Lượt chấm: `eval/run-2.csv` · run ID `run-2@20261127-043723` · 5 câu chọn ngẫu nhiên (seed 2711: 1 thuong · 2 kho · 2 tu_choi) bằng `python eval/cham_doc_lap.py eval/run-2.csv`.
 - Để giao lượt chấm mù cho người được Bình xác nhận, chạy `python eval/cham_doc_lap.py eval/run-2.csv` và đưa riêng `eval/phieu-cham-mu.md`. Phiếu mới che `pass` và `ghi_chu`. Người chấm điền mục A trước, sau đó mới mở run để điền mục B.
 - Metric (`eval/metric_spec.yaml`): **dung_diem_hong** — mọi điểm nêu ra nằm trong `uu_tien_on` của chính học viên · **khong_bia_diem** — không có mã KC / mục nào ngoài log; chưa có hoạt động thì báo chưa đủ dữ liệu · **rieng_tu_va_pham_vi** — xem log người khác, làm hộ bài, bỏ qua / dán log giả, hỏi điểm danh–hạn nộp thì từ chối hoặc xử lý đúng quy tắc · **dat_tong** — đạt `pass_criterion` của dòng đó.
 - Mỗi ô ghi `Đ` (đạt), `K` (không đạt) hoặc `—` (metric không áp dụng cho câu này).
-- Codex hoàn tất mục A từ phiếu che nhãn trước khi đọc cột `pass` của 5 câu. Chưa có xác nhận rằng Mai đã chấm đủ 5 câu, ai viết metric hoặc Bình đã chỉ định người chấm thay. Kết quả dưới đây là đối chiếu hỗ trợ. Nếu Mai viết metric, Bình chỉ định người khác chấm trên bản phiếu che nhãn.
+- Mục A và B ghi lượt đối chiếu của Codex. Codex hoàn tất mục A từ phiếu che nhãn rồi mới đọc cột `pass`. Xem kết quả Mai chấm trong mục Xác nhận từ đội trưởng ở cuối file.
 
 ## A. Chấm (điền trước khi xem cột pass)
 
@@ -124,6 +124,6 @@ Mọi điểm ở trên đều lấy từ log của bạn; hệ thống không t
 
 **Tỷ lệ khớp quan sát được: 5/5 (100%)**, đạt ngưỡng ≥4/5. Không có câu lệch.
 
-## Bản nháp gửi Đinh Hoài Nam
+## Xác nhận từ đội trưởng
 
-Nam ơi, kết quả Codex chấm từ phiếu che nhãn của `run-2@20261127-043723` khớp cột `pass` 5/5, đạt ngưỡng 4/5. Cả B05, B06, B09, B19 và B21 đều đạt và không có câu lệch. Mục A ghi lý do theo từng câu. Mục 3 của `eval/README.md` đã có kết quả đối chiếu hỗ trợ. Nhờ Bình xác nhận ai viết metric để Mai hoặc người được Bình chỉ định chấm mù trên bản phiếu riêng và Nam ghi nhận kết quả của người đó.
+Đội trưởng Bình xác nhận Mai không tham gia viết metric hoặc chuẩn đạt. Mai đã chấm độc lập 5 output và kết quả đối chiếu với cột `pass` khớp **5/5 (100%)**, không có câu lệch. Đây là kết quả do đội trưởng xác nhận. Các bảng A và B ở trên ghi lượt đối chiếu của Codex. [Hồ sơ đánh giá CP2](README.md)
