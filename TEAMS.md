@@ -11,10 +11,10 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò | Phần việc chính |
 |---|---|---|---|---|
-| 1 | ____ | ____ | Đội trưởng | ____ |
-| 2 | ____ | ____ | Thành viên | Bằng chứng pain (đào data preclass) + bộ câu thử |
-| 3 | ____ | ____ | Thành viên | ____ |
-
+| 1 | Vũ Văn Bình  | 2A20260383 | Đội trưởng |  |
+| 2 | Lê Tuấn Đạt | 2A202603949 | Thành viên |  |
+| 3 | Đinh Hoài Nam | 2A202603762 | Thành viên |  |
+| 4 | Đỗ Thanh Mai| 2A202603862 | Thành viên |  |
 **Quy tắc điền**
 - **Lớp:** `L3A` hoặc `L3B`. **Track:** một chữ `A` (EdTech), `B` (Y tế), `C` (Du lịch), `D` (Thương mại điện tử), `E` (Tài chính) hoặc `F` (Làn khác). **Link repo:** link GitHub công khai của nhóm.
 - Mỗi thành viên một dòng, nhóm **3–5 người**. Thiếu thì thêm dòng theo đúng mẫu, thừa thì xoá dòng.
