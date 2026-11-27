@@ -7,18 +7,18 @@
 - **Tỉ lệ đạt** dùng để tính: 24/24 (100%) — run-2@20261127-043723. Cả hai lượt đều 100% nên chi phí/task thành công không đổi so với bản tính theo run-1.
 - **Tỷ giá USD→VND:** 26.010 VND/USD (Vietcombank bán ra, 27/11/2026) — dùng giá bán ra để quy đổi; kiểm lại khi nộp CP4.
 - Token đo trên model gemini-3.5-flash-lite; tính giá cho cả hai model trên (giá bằng nhau nên kết quả bằng nhau).
-- Lượt mô phỏng chạy trên bản sao kiểm thử cùng code/data bằng key cá nhân của thành viên (xem eval/report.md); nhóm chạy lại bằng key nhóm trước CP4.
+- Lượt `simulate-1` chạy bằng key cá nhân của thành viên (xem eval/report.md); lượt `simulate-2` (bản nộp) là lần chạy lại bằng **key nhóm**, cùng code/data, nghỉ 6 giây/lượt gọi (`--wait 6`) để không chạm giới hạn lượt của gói miễn phí.
 
 ## 2. Kết quả mô phỏng
-Lượt mô phỏng: `cost/simulate-1.csv` · simulate-1@20261127-043548 · 50 phiên · seed 42 · phiên lỗi 0/50. Token/phiên trung bình theo persona: 87/119 (vào/ra) · 236/353 · 249/341.
+Lượt mô phỏng (bản nộp): `cost/simulate-2.csv` · simulate-2@20261128-003411 · 50 phiên · seed 42 · phiên lỗi 0/50 · chạy bằng key nhóm. Token/phiên trung bình theo persona: 155/175 (vào/ra) · 336/377 · 509/542. Trong 50 phiên: 43 phiên có gọi model, 7 phiên trả thẳng bằng code (0 token — fast-path). Lượt trước: `cost/simulate-1.csv` (simulate-1@20261127-043548, key cá nhân).
 
-| Model | Chi phí / phiên | Chi phí / task thành công | / tháng — thấp | / tháng — cơ sở | / tháng — cao | / người / tháng (cơ sở) |
+| Model | Chi phí / phiên | Chi phí / task thành công | / tháng — thấp (200) | / tháng — cơ sở (436) | / tháng — cao (700) | / người / tháng (cơ sở) |
 |---|---|---|---|---|---|---|
-| gemini-3.5-flash-lite | $0.00043 | $0.00043 | $0.95 | $2.07 | $3.33 | $0.0048 |
-| gemini-3.1-flash-lite | $0.00043 | $0.00043 | $0.95 | $2.07 | $3.33 | $0.0048 |
+| gemini-3.5-flash-lite | $0.00057 | $0.00057 | $1.31 | $2.86 | $4.59 | $0.0066 |
+| gemini-3.1-flash-lite | $0.00057 | $0.00057 | $1.31 | $2.86 | $4.59 | $0.0066 |
 
-Chi phí / task thành công = chi phí trung bình mỗi phiên ÷ tỉ lệ đạt (100% ở run-1).
+Chi phí / task thành công = chi phí trung bình mỗi phiên ÷ tỉ lệ đạt (100% ở run-2).
 
 ## 3. So với impact
-- Impact / người / tháng (spec §2): ~15 phút ôn đúng trọng tâm mỗi lần dùng thay vì học lại từ đầu — ở kịch bản cơ sở, 436 người x ~10 phiên x 15 phút ≈ 65.400 phút/tháng *(tự ước tính)*, đổi lấy $2.07/tháng chi phí model.
+- Impact / người / tháng (spec §2): ~15 phút ôn đúng trọng tâm mỗi lần dùng thay vì học lại từ đầu — ở kịch bản cơ sở, 436 người x ~10 phiên x 15 phút ≈ 65.400 phút/tháng *(tự ước tính)*, đổi lấy $2.86/tháng chi phí model.
 - Kết luận chi phí: chi phí model không phải rào cản; rào cản thật là độ phủ dữ liệu (mới 17 học viên mẫu) và việc học viên có quay lại ôn hay không — đo ở validation.
