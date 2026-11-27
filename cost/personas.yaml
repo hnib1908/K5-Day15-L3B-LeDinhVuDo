@@ -37,5 +37,5 @@ prices:
     source: "https://ai.google.dev/gemini-api/docs/pricing - xem 27/11/2026 (kiem lai khi nop CP4)"
 
 usd_to_vnd:
-  rate:
-  source:
+  rate: 26010
+  source: "Vietcombank ban ra 26.010 VND/USD ngay 27/11/2026 (mua CK 25.630). Dung gia ban ra de quy doi chi phi; kiem lai khi nop CP4"
