@@ -64,7 +64,10 @@ def call_claude(system, user):
 
 
 def call_gemini(system, user):
-    url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s" % (MODEL_NAME, API_KEY)
+    if MODEL_PROVIDER == "vertex" or API_KEY.startswith("AQ."):
+        url = "https://aiplatform.googleapis.com/v1/publishers/google/models/%s:generateContent?key=%s" % (MODEL_NAME, API_KEY)
+    else:
+        url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s" % (MODEL_NAME, API_KEY)
     body = {"contents": [{"role": "user", "parts": [{"text": user}]}]}
     if system:
         body["systemInstruction"] = {"parts": [{"text": system}]}
@@ -93,7 +96,7 @@ def call_model(system: str, user: str) -> dict:
         r = call_openai(system, user)
     elif MODEL_PROVIDER in ("anthropic", "claude"):
         r = call_claude(system, user)
-    elif MODEL_PROVIDER == "gemini":
+    elif MODEL_PROVIDER in ("gemini", "vertex"):
         r = call_gemini(system, user)
     elif MODEL_PROVIDER == "ollama":
         r = call_ollama(system, user)
