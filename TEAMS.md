@@ -11,7 +11,7 @@
 
 | STT | Họ và tên | Mã học viên | Vai trò | Phần việc chính |
 |---|---|---|---|---|
-| 1 | Vũ Văn Bình  | 2A20260383 | Đội trưởng |  |
+| 1 | Vũ Văn Bình  | 2A202603831 | Đội trưởng |  |
 | 2 | Lê Tuấn Đạt | 2A202603949 | Thành viên |  |
 | 3 | Đinh Hoài Nam | 2A202603762 | Thành viên |  |
 | 4 | Đỗ Thanh Mai| 2A202603862 | Thành viên |  |
