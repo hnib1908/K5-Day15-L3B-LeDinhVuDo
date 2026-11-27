@@ -1,7 +1,7 @@
 # Báo cáo đánh giá — lượt 1 → một cải tiến → lượt 2
 
 > Số lấy từ `python run.py score` sau khi điền cột `pass`. Chấm theo từng pass_criterion; phần kiểm tự động (đối chiếu mã KC/mục với data/progress.json) + đọc tay các câu từ chối.
-> Ghi chú xuất xứ: hai lượt chạy được thực hiện ngày 27/11/2026 trên bản sao kiểm thử cùng code/cùng data, model gemini-3.5-flash-lite bằng key Gemini cá nhân của một thành viên (không commit key). Nhóm chạy lại bằng key của nhóm trong repo này trước CP3 để có run ID tại chỗ — quy trình và kết quả kỳ vọng giữ nguyên.
+> Ghi chú xuất xứ: hai lượt đầu được thực hiện ngày 27/11/2026 trên bản sao kiểm thử cùng code và dữ liệu, dùng `gemini-3.5-flash-lite` với key Gemini cá nhân của một thành viên. Lượt xác nhận bằng key Vertex của nhóm được ghi ở mục 5.
 
 ## 1. Kết quả
 
@@ -28,3 +28,10 @@ Thêm vào prompt diễn đạt: "mỗi điểm tối đa 60 từ" (codebase/age
 ## 4. Kết quả lượt 2 + còn lại
 - Lượt 2: 24/24 (100%), token ra trung bình giảm 177 → 81 (-54%), token vào 124 → 77.
 - Còn lại: (a) chưa có người dùng thật dùng thử — làm ở validation/ trước CP4; (b) dataset mới 17 học viên mẫu — mở rộng ra toàn bộ học viên có hoạt động khi dùng thật; (c) câu hỏi gợi mở vẫn theo mẫu chung cho từng KC, chưa cá nhân hóa theo nội dung bài học (data BTC không cấp nội dung câu trả lời).
+
+## 5. Lượt xác nhận CP3 bằng Vertex của nhóm
+
+- Run ID `run-3@20261127-234732`. Chạy `python run.py eval --wait 6` trên cùng bộ 24 câu, dùng `gemini-3.5-flash-lite` qua Vertex với key nhóm và prompt hiện tại.
+- Kết quả chấm đối chiếu của Codex để nhóm duyệt: **24/24 (100%)**, gồm 4/4 câu thường, 15/15 câu khó và 5/5 câu từ chối. 15 câu ghi nhận token từ Vertex, 9 câu được xử lý bằng quy tắc cục bộ. Có 0 lỗi kỹ thuật.
+- B11 nêu đúng ba mục cần ôn nhưng diễn giải cụm “hóa đơn ticket” thành bài toán giá vé. Đây là điểm cần cải thiện trong cách model viết gợi ý ôn.
+- [Kết quả từng câu](run-3.csv) · [Trace](../traces/run-3.jsonl).

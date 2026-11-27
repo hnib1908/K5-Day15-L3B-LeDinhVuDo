@@ -37,6 +37,7 @@ Nguồn `data/progress.json` — log pre-class tổng hợp của **17 học vi�
 |---|---|---|---|---|---|---|
 | 1 | run-1@20261127-042010 | gemini-3.5-flash-lite | prompt gốc, workflow 2 bước | 24/24 | 100% | đạt |
 | 2 | run-2@20261127-043723 | gemini-3.5-flash-lite | thêm "mỗi điểm tối đa 60 từ" vào `_llm_plan` | 24/24 | 100% | đạt |
+| Xác nhận CP3 | run-3@20261127-234732 | gemini-3.5-flash-lite | cùng bộ 24 câu, prompt hiện tại, key Vertex của nhóm | 24/24 | 100% | đạt (chấm đối chiếu chờ nhóm duyệt) |
 
 Lượt chạy lại vì lỗi kỹ thuật, lượt sau CP4: ghi thêm dòng, không sửa dòng cũ.
 
