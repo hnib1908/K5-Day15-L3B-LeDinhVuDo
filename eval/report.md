@@ -31,7 +31,7 @@ Thêm vào prompt diễn đạt: "mỗi điểm tối đa 60 từ" (codebase/age
 
 ## 5. Lượt xác nhận CP3 bằng Vertex của nhóm
 
-- Run ID `run-3@20261127-234732`. Chạy `python run.py eval --wait 6` trên cùng bộ 24 câu, dùng `gemini-3.5-flash-lite` qua Vertex với key nhóm và prompt hiện tại.
-- Kết quả chấm đối chiếu của Codex để nhóm duyệt: **24/24 (100%)**, gồm 4/4 câu thường, 15/15 câu khó và 5/5 câu từ chối. 15 câu ghi nhận token từ Vertex, 9 câu được xử lý bằng quy tắc cục bộ. Có 0 lỗi kỹ thuật.
+- Run ID `run-3@20261127-234732`. Nhóm chạy `python run.py eval --wait 6` trên cùng bộ 24 câu, dùng `gemini-3.5-flash-lite` qua Vertex với key nhóm và prompt tại thời điểm chạy.
+- Ngày 28/11/2026, đội trưởng Bình xác nhận kết quả chấm đối chiếu của Codex đạt **24/24 (100%)** theo tiêu chí CP2, gồm 4/4 câu thường, 15/15 câu khó và 5/5 câu từ chối. Có 15 câu ghi nhận token từ Vertex và 9 câu được xử lý bằng quy tắc cục bộ. Lượt chạy có 0 lỗi kỹ thuật.
 - B11 nêu đúng ba mục cần ôn nhưng diễn giải cụm “hóa đơn ticket” thành bài toán giá vé. Đây là điểm cần cải thiện trong cách model viết gợi ý ôn.
 - [Kết quả từng câu](run-3.csv) · [Trace](../traces/run-3.jsonl).
