@@ -6,13 +6,18 @@ kiểm lại sau khi model trả (cổng trích dẫn), sai thì dùng bản cod
 Hệ thống không xem log của học viên khác, không làm hộ bài, không nhận log
 do người dùng dán, không tự sửa log.
 """
+import json
 import re
+from pathlib import Path
 
 import ai
 from tools import flag_for_mentor, get_student_progress
 from tracing import note
 
 HV_RE = re.compile(r"\bL\d{4}\b")
+# The log is the source for days and codes. The labels describe them for learners.
+with (Path(__file__).resolve().parents[1] / "data" / "lesson_labels.json").open(encoding="utf-8") as label_file:
+    LESSON_LABELS = json.load(label_file)
 
 
 def _norm(s):
@@ -34,44 +39,69 @@ def _other_hv(text, self_hv):
     return None
 
 
-def _assembled_plan(rec):
+def _assembled_plan(rec, suggestions=None):
     prio = rec["uu_tien_on"]
     lines = ["Dựa trên log pre-class của bạn (%s): đã hoàn thành %d mục, hoạt động %d ngày học."
              % (rec["ma_hoc_vien"], rec["so_muc_da_xong"], len(rec["ngay_hoat_dong"])),
-             "Lộ trình ôn 15 phút — 3 điểm ưu tiên nhất từ log của chính bạn:"]
+             "Lộ trình ôn 15 phút từ log của bạn:"]
     for i, p in enumerate(prio, 1):
+        code = p["ma"]
+        day = p["ngay"].replace("program-day", "Day ", 1)
+        topic = LESSON_LABELS["days"].get(p["ngay"])
+        lesson = f"{day} — {topic}" if topic else day
         if p["loai"] == "kc_sai_lan_dau":
-            lines.append("%d. %s — điểm kiến thức bạn trả lời sai ở lần đầu (%s). "
-                         "Việc ôn (~5 phút): mở lại phần này và tự trả lời: vì sao đáp án lần trước chưa đúng, điểm này dùng khi nào?"
-                         % (i, p["ma"], p["ngay"]))
+            label = LESSON_LABELS["knowledge"].get(code, code.replace("_", " ").capitalize())
+            reason = "Bạn trả lời sai điểm này ở lần đầu."
+            default = "Xem lại câu hỏi và tự giải thích vì sao đáp án lần trước chưa đúng."
         else:
-            lines.append("%d. %s — mục học bạn chưa hoàn thành (%s). "
-                         "Việc ôn (~5 phút): mở mục này và học/xong phần còn thiếu."
-                         % (i, p["ma"], p["ngay"]))
-    lines.append("Mọi điểm ở trên đều lấy từ log của bạn; hệ thống không thêm điểm nào ngoài log.")
+            slug = code.rsplit(":", 1)[-1]
+            label = LESSON_LABELS["items"].get(slug, slug.replace("-", " ").capitalize())
+            reason = "Log ghi mục này chưa hoàn thành."
+            default = "Mở mục này trên Preclass Online và làm tiếp phần còn thiếu."
+        advice = suggestions[code] if suggestions else default
+        lines.extend([
+            "",
+            f"{i}. {lesson}",
+            f"   Mục cần ôn (~5 phút): {label}",
+            f"   Lý do: {reason}",
+            f"   Việc ôn: {advice}",
+            f"   Mã đối chiếu: {code}",
+        ])
     return "\n".join(lines)
 
 
 def _llm_plan(rec):
     prio = rec["uu_tien_on"]
-    facts = "\n".join("- %s (%s, %s)" % (p["ma"], p["loai"], p["ngay"]) for p in prio)
-    system = ("Bạn là trợ lý ôn tập pre-class. Chỉ được dùng đúng các điểm kiến thức/mục học "
-              "trong danh sách được cấp, ghi nguyên mã của chúng. Mỗi điểm kèm 1 câu hỏi gợi mở "
-              "hoặc 1 việc ôn cụ thể, mỗi điểm tối đa 60 từ, tổng ~15 phút. Không bịa điểm nào khác, không làm hộ bài tập.")
-    user = ("Học viên %s đã hoàn thành %d mục. Danh sách điểm ưu tiên ôn (do hệ thống chọn từ log):\n%s\n"
-            "Hãy viết lộ trình ôn 15 phút ngắn gọn bằng tiếng Việt, giữ nguyên các mã trên."
-            % (rec["ma_hoc_vien"], rec["so_muc_da_xong"], facts))
+    facts = "\n".join("- %s (%s)" % (p["ma"], p["loai"]) for p in prio)
+    system = ("Bạn là trợ lý ôn tập pre-class. Trả một đối tượng JSON. Mỗi khóa là nguyên mã "
+              "được cấp, mỗi giá trị là một câu hỏi gợi mở hoặc một việc ôn cụ thể bằng tiếng Việt, "
+              "tối đa 60 từ. Dùng đúng tất cả các mã được cấp làm khóa. Trong phần gợi ý, "
+              "không lặp lại mã, không đoán tên bài, ngày học hay đường dẫn. Không bịa điểm khác, "
+              "không làm hộ bài tập.")
+    user = "Viết gợi ý ôn cho các điểm ưu tiên sau, theo đúng định dạng JSON:\n%s" % facts
     try:
-        out = ai.call_model(system, user)["text"]
+        raw = ai.call_model(system, user)["text"].strip()
     except Exception:
         return _assembled_plan(rec)
-    codes = [p["ma"] for p in prio]
-    universe = {x["ma"] for x in rec["kc_sai_lan_dau"]} | {x["ma"] for x in rec["muc_chua_xong"]}
-    mentioned = set(re.findall(r"[a-z][a-z0-9]+(?:_[a-z0-9]+){1,}", out)) | set(HV_RE.findall(out))
-    extra = {m for m in mentioned if m in universe and m not in codes}
-    if extra or any(c not in out for c in codes):
+
+    fenced = re.fullmatch(r"```(?:json)?\s*(.*?)\s*```", raw, re.DOTALL | re.IGNORECASE)
+    try:
+        suggestions = json.loads(fenced.group(1) if fenced else raw)
+    except json.JSONDecodeError:
         return _assembled_plan(rec)
-    return out
+
+    codes = {p["ma"] for p in prio}
+    if not isinstance(suggestions, dict) or suggestions.keys() != codes:
+        return _assembled_plan(rec)
+    universe = {x["ma"] for x in rec["kc_sai_lan_dau"]} | {x["ma"] for x in rec["muc_chua_xong"]}
+    other_codes = universe - codes
+    for code, suggestion in suggestions.items():
+        if not isinstance(suggestion, str) or not suggestion.strip():
+            return _assembled_plan(rec)
+        if any(other in suggestion for other in other_codes):
+            return _assembled_plan(rec)
+        suggestions[code] = " ".join(suggestion.split())
+    return _assembled_plan(rec, suggestions)
 
 
 def answer(text, session_id="app"):
