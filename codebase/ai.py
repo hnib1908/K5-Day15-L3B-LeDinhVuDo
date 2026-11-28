@@ -64,14 +64,19 @@ def call_claude(system, user):
 
 
 def call_gemini(system, user):
-    if MODEL_PROVIDER == "vertex" or API_KEY.startswith("AQ."):
+    if MODEL_PROVIDER == "vertex":
+        # Vertex AI Express: endpoint aiplatform, key qua query ?key= (dang nhom dang dung).
         url = "https://aiplatform.googleapis.com/v1/publishers/google/models/%s:generateContent?key=%s" % (MODEL_NAME, API_KEY)
+        headers = {}
     else:
-        url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent?key=%s" % (MODEL_NAME, API_KEY)
+        # AI Studio: key cu dang "AIza" va key moi dang "AQ." deu goi endpoint generativelanguage.
+        # Gui key qua header x-goog-api-key (hop le cho ca hai dang; key "AQ." bi tu choi neu dua vao ?key=).
+        url = "https://generativelanguage.googleapis.com/v1beta/models/%s:generateContent" % MODEL_NAME
+        headers = {"x-goog-api-key": API_KEY}
     body = {"contents": [{"role": "user", "parts": [{"text": user}]}]}
     if system:
         body["systemInstruction"] = {"parts": [{"text": system}]}
-    data = post_json(url, {}, body)
+    data = post_json(url, headers, body)
     parts = data["candidates"][0]["content"]["parts"]
     text = "".join(p.get("text", "") for p in parts)
     u = data.get("usageMetadata", {})
