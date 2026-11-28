@@ -1,0 +1,52 @@
+{
+  "days": {
+    "program-day01": "Nền tảng AI và mô hình ngôn ngữ",
+    "program-day02": "Định nghĩa bài toán AI",
+    "program-day03": "Từ chatbot đến agent",
+    "program-day04": "Viết prompt và gọi công cụ",
+    "program-day05": "Tư duy sản phẩm và yêu cầu AI",
+    "program-day06": "Kỹ thuật dữ liệu cho agent",
+    "program-day07": "Truy xuất thông tin và chuẩn bị ngữ cảnh",
+    "program-day08": "Từ workflow đến agent",
+    "program-day09": "Đánh giá và phân tích lỗi",
+    "program-day10": "Từ bản chứng minh ý tưởng đến pilot",
+    "program-day11": "Rào chắn, người duyệt và AI có trách nhiệm",
+    "program-day12": "Quy trình phát triển phần mềm với coding agent",
+    "program-day13": "Chi phí và hiệu quả khi triển khai"
+  },
+  "knowledge": {
+    "adoption_vs_outcome_metrics": "Phân biệt chỉ số sử dụng và chỉ số kết quả",
+    "ai_product_canvas": "Canvas sản phẩm AI",
+    "ai_requirement_outcome_threshold_fallback": "Yêu cầu AI: kết quả, ngưỡng đạt và phương án dự phòng",
+    "ai_uncertainty_layers": "Các lớp bất định trong hệ thống AI",
+    "approval_screen_from_exact_action": "Thiết kế màn hình duyệt từ hành động cụ thể",
+    "asr_utility_approval_metrics": "Chỉ số tấn công thành công, tính hữu ích và lượt cần duyệt",
+    "bounded_retry_cost": "Chi phí khi giới hạn số lần thử lại",
+    "capability_tags_data_flow": "Nhãn quyền công cụ và luồng dữ liệu",
+    "chatbot_is_app_around_model": "Chatbot là ứng dụng bao quanh mô hình AI",
+    "chunk_size_tradeoff": "Đánh đổi khi chọn kích thước đoạn dữ liệu",
+    "cluster_design_effect": "Ảnh hưởng của việc lấy mẫu theo cụm",
+    "complete_ai_problem_statement": "Cách viết đầy đủ phát biểu bài toán AI",
+    "cost_lever_sensitivity": "Độ nhạy của chi phí khi thay đổi giả định",
+    "cost_per_successful_task": "Chi phí trên mỗi tác vụ thành công",
+    "economic_risk_register_rows": "Các mục trong bảng theo dõi rủi ro chi phí",
+    "gate_before_side_effect": "Kiểm tra trước khi hành động có tác động bên ngoài",
+    "implicit_decisions_shared_context": "Quyết định ngầm và ngữ cảnh dùng chung",
+    "reliable_tool_design_principles": "Nguyên tắc thiết kế công cụ đáng tin cậy",
+    "select_rule_workflow_agent_level": "Chọn cấp đặt quy tắc cho workflow và agent",
+    "skill_progressive_disclosure": "Nạp hướng dẫn của skill theo từng bước",
+    "system_prompt_antipatterns": "Các lỗi thường gặp khi viết system prompt",
+    "workflow_vs_agent_control": "Phân biệt cách workflow và agent điều khiển luồng"
+  },
+  "items": {
+    "kiem-tra-cuoi-ngay": "Kiểm tra cuối ngày",
+    "lab-d02-lab-ban-dieu-phoi": "Lab Bàn điều phối",
+    "lab-d05-lab-eval-spec": "Lab Đặc tả đánh giá",
+    "lab-d05-lab-thang-tu-chu": "Lab Thang tự chủ",
+    "lab-d10-lab-buoc-danh-gia": "Lab Bước đánh giá",
+    "lab-d10-lab-van-hanh-pilot": "Lab Vận hành pilot",
+    "lab-d11-lab-ham-quyet-dinh": "Lab Hàm quyết định",
+    "lab-d13-lab-hoa-don-ticket": "Lab Hóa đơn ticket",
+    "lab-d13-lab-pilot-trung-thuc": "Lab Pilot trung thực"
+  }
+}
