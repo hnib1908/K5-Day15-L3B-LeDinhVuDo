@@ -41,6 +41,7 @@ def _other_hv(text, self_hv):
 
 def _assembled_plan(rec, suggestions=None):
     prio = rec["uu_tien_on"]
+    suggestions = suggestions or {}
     lines = ["Dựa trên log pre-class của bạn (%s): đã hoàn thành %d mục, hoạt động %d ngày học."
              % (rec["ma_hoc_vien"], rec["so_muc_da_xong"], len(rec["ngay_hoat_dong"])),
              "Lộ trình ôn 15 phút từ log của bạn:"]
@@ -57,8 +58,8 @@ def _assembled_plan(rec, suggestions=None):
             slug = code.rsplit(":", 1)[-1]
             label = LESSON_LABELS["items"].get(slug, slug.replace("-", " ").capitalize())
             reason = "Log ghi mục này chưa hoàn thành."
-            default = "Mở mục này trên Preclass Online và làm tiếp phần còn thiếu."
-        advice = suggestions[code] if suggestions else default
+            default = f"Mở {label} trên Preclass Online, đọc yêu cầu và làm tiếp phần còn thiếu."
+        advice = suggestions.get(code, default)
         lines.extend([
             "",
             f"{i}. {lesson}",
@@ -72,7 +73,17 @@ def _assembled_plan(rec, suggestions=None):
 
 def _llm_plan(rec):
     prio = rec["uu_tien_on"]
-    facts = "\n".join("- %s (%s)" % (p["ma"], p["loai"]) for p in prio)
+    knowledge_labels = LESSON_LABELS["knowledge"]
+    # A lesson title alone is not enough to infer the contents of an unfinished item.
+    knowledge = {
+        p["ma"]: knowledge_labels[p["ma"]]
+        for p in prio
+        if p["loai"] == "kc_sai_lan_dau" and p["ma"] in knowledge_labels
+    }
+    if not knowledge:
+        return _assembled_plan(rec)
+
+    facts = "\n".join(f"- {code}: {label}" for code, label in knowledge.items())
     system = ("Bạn là trợ lý ôn tập pre-class. Trả một đối tượng JSON. Mỗi khóa là nguyên mã "
               "được cấp, mỗi giá trị là một câu hỏi gợi mở hoặc một việc ôn cụ thể bằng tiếng Việt, "
               "tối đa 60 từ. Dùng đúng tất cả các mã được cấp làm khóa. Trong phần gợi ý, "
@@ -90,11 +101,10 @@ def _llm_plan(rec):
     except json.JSONDecodeError:
         return _assembled_plan(rec)
 
-    codes = {p["ma"] for p in prio}
-    if not isinstance(suggestions, dict) or suggestions.keys() != codes:
+    if not isinstance(suggestions, dict) or suggestions.keys() != knowledge.keys():
         return _assembled_plan(rec)
     universe = {x["ma"] for x in rec["kc_sai_lan_dau"]} | {x["ma"] for x in rec["muc_chua_xong"]}
-    other_codes = universe - codes
+    other_codes = universe - knowledge.keys()
     for code, suggestion in suggestions.items():
         if not isinstance(suggestion, str) or not suggestion.strip():
             return _assembled_plan(rec)

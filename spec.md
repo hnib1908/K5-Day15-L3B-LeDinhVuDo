@@ -30,7 +30,7 @@ Data BTC cấp đã dùng (không commit nguyên file): data/preclass — đào 
 - Trợ giảng AI trong chính trang pre-class: đáng học — trả lời ngay tại chỗ học; đáng né — không tổng hợp log dài hạn, học viên sai xong vẫn không biết mình hổng hệ thống ở đâu; mình khác ở chỗ: quyết định ôn gì lấy từ log thật của chính học viên bằng code, model chỉ diễn đạt.
 
 ## §4. Thiết kế
-- **Lát cắt MỘT CÂU**. Với học viên hỏi nên ôn gì trong 15 phút, hệ thống chọn tối đa ba điểm từ log theo quy tắc và model soạn hoạt động ôn cho từng điểm đã chọn, hoặc hệ thống báo thiếu dữ liệu khi log chưa đủ.
+- **Lát cắt MỘT CÂU**. Khi học viên hỏi nên ôn gì trong 15 phút, hệ thống chọn tối đa ba điểm từ log, dùng model viết gợi ý cho các điểm kiến thức có nhãn chủ đề, chỉ chỗ mở các mục còn dang dở và báo thiếu dữ liệu khi log chưa đủ.
 - Không làm (4 điều): (1) không xem / tiết lộ log của học viên khác; (2) không làm hộ bài lab / bài nộp; (3) không tự sửa log theo lời kể — chỉ tạo ca nhờ lab coach kiểm chứng; (4) không trả điểm danh, hạn nộp, lịch phòng (ngoài phạm vi).
 - **Sơ đồ**:
 ```mermaid
@@ -41,7 +41,10 @@ flowchart TD
   D --> E{Co hoat dong trong log?}
   E -- Khong --> F[Bao chua du du lieu, khong neu diem nao]
   E -- Co --> G[Code chon toi da 3 diem uu tien]
-  G --> H[Model dien dat lo trinh 15 phut + cong trich dan kiem lai]
+  G --> H{Co diem kien thuc co nhan chu de?}
+  H -- Co --> I[Model viet goi y on, code kiem ma]
+  H -- Khong --> J[Code lap lo trinh va chi cho mo bai]
+  I --> J
 ```
 - **Hình dạng:** [x] workflow cố định · [ ] một agent · [ ] nhiều agent — quyết định chọn điểm ôn là quy tắc rõ ràng trên log (KC sai lần đầu → mục chưa xong), workflow rẻ, đo được bằng đối chiếu log; model chỉ diễn đạt để tránh bịa điểm.
 - **Quy tắc chọn điểm ưu tiên (code, không phải model):** (1) KC trả lời sai ở lần đầu, ngày gần nhất trước, rồi a-z; (2) nếu chưa đủ 3, mục học thuộc buổi đã hoạt động nhưng chưa hoàn thành, ngày gần nhất trước; tối đa 3 điểm.
@@ -91,8 +94,9 @@ flowchart TD
 - Kết quả: lượt 1 24/24 (100%) · lượt 2 24/24 (100%) — run ID: run-1@20261127-042010 / run-2@20261127-043723 → chi tiết `eval/report.md`, hồ sơ `eval/README.md`
 
 ## §8. Chi phí khi dùng thật
-- Persona + giá: `cost/personas.yaml` · lượt mô phỏng: 50 phiên (simulate-1@20261127-043548)
-- Chi phí / task thành công: $0.00043 · Chi phí / tháng 3 kịch bản: thấp $0.95 · cơ sở $2.07 · cao $3.33 → `cost/cost-estimate.md`
+- Mô phỏng `simulate-2@20261128-003411` dùng key nhóm, đo token trên `gemini-3.5-flash-lite` với 50 phiên, 0 lỗi. Persona và giá nằm trong [cost/personas.yaml](cost/personas.yaml).
+- Chi phí model cho một tác vụ thành công là **0,00057 USD**, tính theo tỷ lệ đạt **24/24** của `run-2@20261127-043723`.
+- Chi phí model mỗi tháng ước tính **1,31 USD** (thấp, 200 người), **2,86 USD** (cơ sở, 436 người) và **4,59 USD** (cao, 700 người). Xem [kết quả mô phỏng](cost/simulate-2-summary.md) và [báo cáo chi phí](cost/cost-estimate.md).
 
 ## §9. Rủi ro & an toàn
 - Dữ liệu: chỉ dùng mã học viên đã ẩn danh của BTC và số tổng hợp; không commit nguyên file data BTC; không đưa dữ liệu của học viên này cho học viên khác.
@@ -109,6 +113,9 @@ flowchart TD
 |---|---|---|
 | Trước CP1 · 27/11 | Đổi hướng từ A2 (trợ lý Discord) sang A1 theo log pre-class BTC cấp | Log thật cho phép đo hành vi sai lần đầu và làm lại. Bộ câu thử có 17/24 câu từ dữ liệu thật. |
 | Chuẩn bị CP2 · 27/11 | Cập nhật Canvas, phân công và bổ sung năm ví dụ từ log BTC | Giúp nhóm kiểm lại số và mô tả đúng vai trò của code, model trong lát cắt. |
+| Chuẩn bị CP4 · 28/11 | Chạy `simulate-2` bằng key nhóm và đồng bộ số liệu chi phí giữa spec, báo cáo và slide CP4 | Dùng số token đo từ lần chạy của nhóm để ước tính chi phí. |
+| Chuẩn bị CP4 · 28/11 | Bổ sung ngày học, tên bài và mục cần ôn cho từng gợi ý (PR #7) | Học viên có thể tìm bài trên Preclass Online từ lộ trình. |
+| Chuẩn bị CP4 · 28/11 | Với mục chưa hoàn thành, hướng học viên mở bài và đọc yêu cầu. Model viết gợi ý cho các điểm kiến thức có nhãn chủ đề. | Log chỉ có mã mục học. Ca B11 cho thấy model có thể hiểu sai nội dung khi chỉ đọc tên lab. |
 
 **Sau CP4 (đến 23:59 Thứ Bảy 28/11)**
 
