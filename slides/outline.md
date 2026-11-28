@@ -8,10 +8,10 @@
 | 1 | Người dùng & pain | Ai · việc gì · chỗ đau và số liệu từ log | `evidence/summary.md`, `evidence/data-mining.md` | Có số liệu · chờ trích dẫn từ Bình |
 | 2 | Vì sao chọn bài này | Bảng impact rút gọn + hướng bị loại | `spec.md` §2 | ☑ |
 | 3 | Giải pháp | Lát cắt một câu · sơ đồ · AI tự làm đến đâu, vì sao | `spec.md` §4 | ☑ |
-| 4 | Demo live | B07 và B15 · video dự phòng ở chế độ cục bộ | `eval/benchmark.csv`, `eval/run-2.csv` | Có bản dự phòng cục bộ · chờ video/link của Đạt |
-| 5 | **Đánh giá thế nào** | Dataset · bộ câu thử · metric · hai lượt chạy · đối chiếu 5 output | `eval/report.md`, `eval/cham-doc-lap.md` | Có số liệu · chờ kết quả người chấm độc lập |
-| 6 | **Chi phí khi dùng thật** | Chi phí / task thành công · 3 kịch bản · so với impact | `cost/cost-estimate.md` | ☑ |
-| 7 | Kết luận | Thử cùng học viên rồi quyết định mở rộng | `evidence/data-mining.md`, `eval/report.md`, `cost/simulate-1-summary.md` | ☑ |
+| 4 | Demo live | B07 và B15 · video dự phòng ở chế độ cục bộ | `eval/benchmark.csv`, `eval/run-2.csv`, `README.md` mục 7 | ☑ video Drive công khai của Đạt |
+| 5 | **Đánh giá thế nào** | Dataset · bộ câu thử · metric · hai lượt chạy · đối chiếu 5 output | `eval/report.md`, `eval/README.md` §3, `eval/cham-doc-lap.md` | ☑ Mai chấm độc lập khớp 5/5 |
+| 6 | **Chi phí khi dùng thật** | Chi phí / task thành công · 3 kịch bản · so với impact | `cost/cost-estimate.md`, `cost/simulate-2-summary.md` | ☑ simulate-2 |
+| 7 | Kết luận | Thử cùng học viên rồi quyết định mở rộng | `evidence/data-mining.md`, `eval/report.md`, `cost/simulate-2-summary.md` | ☑ |
 | 8 | Nếu có thêm 1 tuần | 2–3 việc, trỏ về lỗi còn lại / phản hồi người dùng | `eval/report.md` mục 4 · `validation/log.md` | ☑ |
 
 **Trước khi lên:** tải repo về một máy khác (hoặc thư mục mới), chạy theo mục "Chạy trong 3 phút" của `README.md` · `.env` có trên máy demo, đã gọi thử 1 câu trong vòng 1 giờ trước giờ demo · video dự phòng mở được bằng cửa sổ ẩn danh · biết bản chạy thử sẽ làm gì với **1 câu thử lạ** của giám khảo.
@@ -48,16 +48,16 @@ Một học viên · hỏi "ôn gì trong 15 phút" · hệ thống chọn tối
 
 **Trang 4 — Demo live**
 Ca thường: L0010 hỏi ôn gì → lộ trình 3 điểm (2 KC sai lần đầu + 1 mục chưa xong).
-Ca khó: L0001 chưa có hoạt động → "chưa đủ dữ liệu". Dự phòng ngay trên máy: `demo-preclasscoach.mp4` ở gốc repo, dựng từ lần chạy cục bộ của `python run.py` cho B07 và B15. Chờ video hoặc link công khai của Đạt. Có thể chạy web demo bằng `python web_demo.py`.
+Ca khó: L0001 chưa có hoạt động → "chưa đủ dữ liệu". Video dự phòng (36s, Google Drive công khai, Đạt): https://drive.google.com/file/d/1_TUCj0DW2yme8MjW6ZYxK7heKXsV_qw7/view?usp=sharing · bản trong repo: `demo-preclasscoach.mp4`. Có thể chạy web demo bằng `python web_demo.py`.
 
 **Trang 5 — Đánh giá thế nào**
 Benchmark 24 câu (4 thường · 15 khó · 5 từ chối), 17/24 câu từ data thật của BTC.
 Chuẩn "đạt": >=80% tổng, 100% câu khó + từ chối không bịa điểm ngoài log, 100% từ chối đúng quy tắc.
 Lượt 1 run-1@20261127-042010: 24/24 (100%) → cải tiến prompt (<=60 từ/điểm) → Lượt 2 run-2@20261127-043723: 24/24 (100%), token ra 177 → 81.
-Codex đối chiếu từ phiếu che nhãn: 5/5 khớp cột `pass`, đạt ngưỡng 4/5. Xem bản nháp gửi Nam trong `eval/cham-doc-lap.md`. Chờ Bình xác nhận người viết metric và Mai hoặc người do Bình chỉ định hoàn tất lượt chấm độc lập.
+Người chấm độc lập: Mai (không viết metric/chuẩn đạt) chấm mù 5 output của run-2, khớp cột `pass` **5/5 (100%)**, đạt ngưỡng ≥4/5, không có câu lệch; Bình xác nhận (`eval/README.md` §3, `eval/cham-doc-lap.md`).
 
 **Trang 6 — Chi phí khi dùng thật**
-Mô phỏng 50 phiên (simulate-1, tỷ lệ đạt từ run-1): chi phí model $0.00043/task thành công. Ba kịch bản: 200 người → $0.95/tháng, 436 → $2.07/tháng, 700 → $3.33/tháng (gemini-3.5-flash-lite). Dự toán dùng tần suất theo `cost/personas.yaml`. Ước tính tác động trang 2 dùng giả định 8 lần/người/tháng từ `spec.md` §2.
+Mô phỏng 50 phiên simulate-2@20261128-003411 (key nhóm, 0/50 phiên lỗi, tỷ lệ đạt 24/24 từ run-2): chi phí model $0.00057/task thành công. Ba kịch bản: 200 người → $1.31/tháng, 436 → $2.86/tháng, 700 → $4.59/tháng (gemini-3.5-flash-lite). Nguồn: `cost/simulate-2-summary.md`, `cost/cost-estimate.md`; giá https://ai.google.dev/gemini-api/docs/pricing. Dự toán dùng tần suất theo `cost/personas.yaml`. Ước tính tác động trang 2 dùng giả định 8 lần/người/tháng từ `spec.md` §2.
 
 **Trang 7 — Kết luận**
 GO có điều kiện: số đo đạt chuẩn ở cả 2 lượt, chi phí không đáng kể; điều kiện là kiểm chứng với người dùng thật (validation) và mở rộng dataset từ 17 học viên mẫu ra toàn bộ học viên có hoạt động.
